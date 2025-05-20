@@ -2,7 +2,14 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "shorturl",
   "main": "src/index.ts",
-  "compatibility_date": "2025-05-20"
+  "compatibility_date": "2025-05-20",
+  "rules": [
+    {
+      "type": "Text",
+      "globs": [ "**/*.toml" ],
+      "fallthrough": true
+    }
+  ]
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
